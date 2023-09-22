@@ -9,6 +9,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
+#CORS is the Cross origin resource  sharing platform 
+# Cross-Origin Resource Sharing, or CORS, is a mechanism that lets a server (the Flask application in our case) specify URL patterns other than its own from which the client should be allowed to load resources. This is carried out in HTTP headers, but we typically handle it in a more automated fashion with extensions like Flask-CORS.
 CORS(app)
 migrate = Migrate(app, db)
 
